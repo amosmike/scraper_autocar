@@ -7,7 +7,6 @@ from webdriver_manager.firefox import GeckoDriverManager
 from selenium import webdriver
 from selenium.webdriver import Firefox
 from selenium.webdriver.chrome.service import Service
-import urllib.request
 import pandas as pd
 import requests
 import boto3 
