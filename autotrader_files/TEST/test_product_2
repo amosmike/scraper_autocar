@@ -1,0 +1,81 @@
+from importlib.resources import path
+import os
+import sys
+import unittest
+import requests
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+
+print(sys.path)
+
+# from autocar_scraper.data_pipeline8 import Scraper
+from autocar_scraper import data_pipeline8
+
+class Test_Scraper(unittest.TestCase):
+    def setUp(self):
+        self.scraper = data_pipeline8.Scraper("https://www.autotrader.co.uk", "CV326JA", "SEAT", "Ibiza", 5) # Runs __init__, private functions
+
+
+    def test__get_page_links_type(self):
+        self.scraper.driver.get("https://www.autotrader.co.uk/car-search?postcode=CV326JA&make=SEAT&model=Ibiza&include-delivery-option=on&advertising-location=at_cars&page=1")
+        try: 
+            self.scraper._load_and_accept_cookies()
+        except: 
+            pass
+
+        expected_type = list
+        actual_type = type(self.scraper._get_page_links())
+        self.assertEqual(expected_type, actual_type)
+
+    def test_get_all_links_type(self): 
+        self.scraper.driver.get("https://www.autotrader.co.uk/car-search?postcode=CV326JA&make=SEAT&model=Ibiza&include-delivery-option=on&advertising-location=at_cars&page=1")
+        try: 
+            self.scraper._load_and_accept_cookies()
+        except: 
+            pass
+
+        expected_type = list
+        actual_type = type(self.scraper._get_all_links())
+        self.assertEqual(expected_type, actual_type)
+
+    def test_makes_dict(self):
+        self.scraper.driver.get("https://www.autotrader.co.uk/car-search?postcode=CV326JA&make=SEAT&model=Ibiza&include-delivery-option=on&advertising-location=at_cars&page=1")
+        try: 
+            self.scraper._load_and_accept_cookies()
+        except: 
+            pass
+
+        expected_length = 5
+        actual_length = len(self.scraper._makes_dict(5)["Name"])
+        self.assertEqual(expected_length, actual_length)
+
+    # def test_upload_to_RDS(self, database_type: str = 'postgresql', dbapi: str = 'psycopg2', endpoint: str = 'aicoredb.cfomrz1jyxe6.eu-west-2.rds.amazonaws.com', 
+    # user: str = 'postgres', password: str = 'password', port: int = 5432, database: str = 'postgres'):
+
+
+    # def test_save_as_JSON(self, path):
+    #     expected_type = 
+    #     actual_type = type(self.scraper._get_all_links())
+    #     self.assertEqual(expected_type, actual_type)
+
+    # def test_uploadDirectory(self):
+
+    #     # Change this with your URL
+    #     url = 'https://autotrader-data-bucket.s3.eu-west-2.amazonaws.com/car_data.json'
+    #     os.chdir(r'/Users/michaelamos/Documents/AICore/Practice/autotrader/downloads')
+
+    #     response = requests.get(url)
+    #     with open('car_data.json', 'wb') as f:
+    #         f.write(response.content)ini
+
+
+    
+    def tearDown(self):
+        del self.scraper
+
+if __name__ == '__main__':
+    unittest.main(argv=[''], verbosity=0, exit=True) # What does this bit doooo? Change back to False when happy with test
+    suite = unittest.TestLoader().loadTestsFromTestCase(Test_Scraper)
+    unittest.TextTestRunner(verbosity=2).run(suite)
+
+
+

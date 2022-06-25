@@ -1,0 +1,7 @@
+selenium==4.1.5
+sqlalchemy==1.4.32
+webdriver-manager==3.7.0
+pandas==1.4.2
+boto3==1.24.12
+PyYAML # Install yaml with PyYAML
+psycopg2==2.9.3  

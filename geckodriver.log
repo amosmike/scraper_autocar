@@ -1,0 +1,185 @@
+1655929470197	geckodriver	INFO	Listening on 127.0.0.1:50363
+1655929470573	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "50364" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/5l/m4mgg0s9311963f49gn6z3pc0000gn/T/rust_mozprofileSwHv6f"
+2022-06-22 21:24:31.283 plugin-container[17472:161351] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-22 21:24:31.283 plugin-container[17472:161351] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1655929471299	Marionette	INFO	Marionette enabled
+2022-06-22 21:24:31.365 plugin-container[17472:161351] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-22 21:24:31.365 plugin-container[17472:161351] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-06-22 21:24:31.365 plugin-container[17472:161386] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-22 21:24:31.366 plugin-container[17472:161386] nil host used in call to allowsAnyHTTPSCertificateForHost:
+WebDriver BiDi listening on ws://localhost:50364
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/5l/m4mgg0s9311963f49gn6z3pc0000gn/T/rust_mozprofileSwHv6f/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+1655929472622	Marionette	INFO	Listening on port 50379
+DevTools listening on ws://localhost:50364/devtools/browser/6d996813-f890-4b0c-bb1d-8470e5f2ea29
+Read port: 50379
+1655929472685	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+JavaScript warning: https://pagead2.googlesyndication.com/bg/soJQjVMEWz-AW2aX2cEGIVeY-mqDblLvtbtmS3KyNC4.js line 2 > eval line 558 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.autotrader.co.uk"
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.autotrader.co.uk"
+1655929547504	geckodriver	INFO	Listening on 127.0.0.1:50504
+1655929548020	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "50505" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/5l/m4mgg0s9311963f49gn6z3pc0000gn/T/rust_mozprofileTa8TVX"
+2022-06-22 21:25:48.363 plugin-container[17561:162683] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-22 21:25:48.363 plugin-container[17561:162683] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1655929548368	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:50505
+2022-06-22 21:25:48.389 plugin-container[17561:162683] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-22 21:25:48.389 plugin-container[17561:162683] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-06-22 21:25:48.389 plugin-container[17561:162713] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-22 21:25:48.389 plugin-container[17561:162713] nil host used in call to allowsAnyHTTPSCertificateForHost:
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/5l/m4mgg0s9311963f49gn6z3pc0000gn/T/rust_mozprofileTa8TVX/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+1655929549361	Marionette	INFO	Listening on port 50520
+Read port: 50520
+DevTools listening on ws://localhost:50505/devtools/browser/7ae37749-863e-4a1d-85cd-53c882a218d1
+1655929549384	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+JavaScript warning: https://pagead2.googlesyndication.com/bg/soJQjVMEWz-AW2aX2cEGIVeY-mqDblLvtbtmS3KyNC4.js line 2 > eval line 3032 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.autotrader.co.uk"
+1655929563628	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.autotrader.co.uk"
+JavaScript error: https://www.autotrader.co.uk/static/9641/js/_generated/bundles/5.js, line 2: ReferenceError: googleAdOptions is not defined
+1655929578892	Marionette	INFO	Stopped listening on port 50520
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1655930130316	geckodriver	INFO	Listening on 127.0.0.1:50681
+1655930130832	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "50682" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/5l/m4mgg0s9311963f49gn6z3pc0000gn/T/rust_mozprofilevGqPBS"
+1655930131432	Marionette	INFO	Marionette enabled
+2022-06-22 21:35:31.446 plugin-container[18129:169367] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-22 21:35:31.446 plugin-container[18129:169367] nil host used in call to allowsAnyHTTPSCertificateForHost:
+WebDriver BiDi listening on ws://localhost:50682
+2022-06-22 21:35:31.632 plugin-container[18129:169367] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-22 21:35:31.632 plugin-container[18129:169367] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-06-22 21:35:31.632 plugin-container[18129:169365] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-22 21:35:31.632 plugin-container[18129:169365] nil host used in call to allowsAnyHTTPSCertificateForHost:
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/5l/m4mgg0s9311963f49gn6z3pc0000gn/T/rust_mozprofilevGqPBS/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+1655930132362	Marionette	INFO	Listening on port 50696
+DevTools listening on ws://localhost:50682/devtools/browser/d364b792-2d2a-4eaf-bfe9-c98b94be2407
+Read port: 50696
+1655930132411	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+JavaScript warning: https://pagead2.googlesyndication.com/bg/Lm7rFgrIBRo_ITQOHaUzgnXfknBPfX56ETeLWpEgtsk.js line 2 > eval line 376 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.autotrader.co.uk"
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.autotrader.co.uk"
+JavaScript error: https://www.autotrader.co.uk/static/9641/js/_generated/bundles/5.js, line 2: ReferenceError: googleAdOptions is not defined
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.autotrader.co.uk"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.autotrader.co.uk"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.autotrader.co.uk"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.autotrader.co.uk"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.autotrader.co.uk"
+1655930166735	Marionette	INFO	Stopped listening on port 50696
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1655930188679	geckodriver	INFO	Listening on 127.0.0.1:50823
+1655930189199	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "--remote-debugging-port" "50824" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/5l/m4mgg0s9311963f49gn6z3pc0000gn/T/rust_mozprofileO90xGt"
+*** You are running in headless mode.
+1655930189751	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:50824
+2022-06-22 21:36:29.820 plugin-container[18211:170491] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-22 21:36:29.820 plugin-container[18211:170491] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-06-22 21:36:29.900 plugin-container[18211:170491] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-22 21:36:29.900 plugin-container[18211:170491] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-06-22 21:36:29.900 plugin-container[18211:170519] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-22 21:36:29.900 plugin-container[18211:170519] nil host used in call to allowsAnyHTTPSCertificateForHost:
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/5l/m4mgg0s9311963f49gn6z3pc0000gn/T/rust_mozprofileO90xGt/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+1655930190334	Marionette	INFO	Listening on port 50838
+DevTools listening on ws://localhost:50824/devtools/browser/27452b5a-4ce0-461c-b84d-81291f9db669
+Read port: 50838
+1655930190362	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pagead2.googlesyndication.com/bg/Lm7rFgrIBRo_ITQOHaUzgnXfknBPfX56ETeLWpEgtsk.js line 2 > eval line 7684 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.autotrader.co.uk"
+1655930204007	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.autotrader.co.uk"
+JavaScript error: https://www.autotrader.co.uk/static/9641/js/_generated/bundles/5.js, line 2: ReferenceError: googleAdOptions is not defined
+1655930218096	Marionette	INFO	Stopped listening on port 50838
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1655932212871	Marionette	INFO	Stopped listening on port 50379
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1655984710085	geckodriver	INFO	Listening on 127.0.0.1:52672
+1655984710603	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "--remote-debugging-port" "52673" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/5l/m4mgg0s9311963f49gn6z3pc0000gn/T/rust_mozprofileb5W2Hv"
+*** You are running in headless mode.
+1655984711330	Marionette	INFO	Marionette enabled
+2022-06-23 12:45:11.331 plugin-container[39341:350870] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-23 12:45:11.331 plugin-container[39341:350870] nil host used in call to allowsAnyHTTPSCertificateForHost:
+WebDriver BiDi listening on ws://localhost:52673
+2022-06-23 12:45:11.614 plugin-container[39341:350870] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-23 12:45:11.615 plugin-container[39341:350870] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-06-23 12:45:11.615 plugin-container[39341:350875] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-23 12:45:11.615 plugin-container[39341:350875] nil host used in call to allowsAnyHTTPSCertificateForHost:
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/5l/m4mgg0s9311963f49gn6z3pc0000gn/T/rust_mozprofileb5W2Hv/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+1655984712361	Marionette	INFO	Listening on port 52687
+Read port: 52687
+DevTools listening on ws://localhost:52673/devtools/browser/e7406f45-076a-4f4f-bac3-331ac823cb97
+1655984712382	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pagead2.googlesyndication.com/bg/Aq6axuIj4xdN0A4LClEu7wk1FdfqQrvSY5ZnYLGiLRk.js line 2 > eval line 2920 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.autotrader.co.uk"
+1655984727691	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.autotrader.co.uk"
+JavaScript error: https://www.autotrader.co.uk/static/9641/js/_generated/bundles/5.js, line 2: ReferenceError: googleAdOptions is not defined
+JavaScript warning: https://pagead2.googlesyndication.com/bg/Aq6axuIj4xdN0A4LClEu7wk1FdfqQrvSY5ZnYLGiLRk.js line 2 > eval line 3498 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1655984749565	Marionette	INFO	Stopped listening on port 52687
+1656012432237	geckodriver	INFO	Listening on 127.0.0.1:53943
+1656012432756	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "--remote-debugging-port" "53944" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/5l/m4mgg0s9311963f49gn6z3pc0000gn/T/rust_mozprofileBQzekq"
+*** You are running in headless mode.
+2022-06-23 20:27:13.490 plugin-container[55508:505067] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-23 20:27:13.490 plugin-container[55508:505067] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1656012433493	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:53944
+2022-06-23 20:27:13.598 plugin-container[55508:505067] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-23 20:27:13.598 plugin-container[55508:505067] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-06-23 20:27:13.598 plugin-container[55508:505072] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-06-23 20:27:13.598 plugin-container[55508:505072] nil host used in call to allowsAnyHTTPSCertificateForHost:
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/5l/m4mgg0s9311963f49gn6z3pc0000gn/T/rust_mozprofileBQzekq/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+1656012434324	Marionette	INFO	Listening on port 53958
+DevTools listening on ws://localhost:53944/devtools/browser/39becafe-f050-484f-90bc-32b2346f9cdd
+Read port: 53958
+1656012434431	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://pagead2.googlesyndication.com/bg/Aq6axuIj4xdN0A4LClEu7wk1FdfqQrvSY5ZnYLGiLRk.js line 2 > eval line 4689 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.autotrader.co.uk"
+1656012448137	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.autotrader.co.uk"
+JavaScript error: https://www.autotrader.co.uk/static/9641/js/_generated/bundles/5.js, line 2: ReferenceError: googleAdOptions is not defined
+JavaScript error: https://www.autotrader.co.uk/static/9641/js/_generated/bundles/5.js, line 2: ReferenceError: googleAdOptions is not defined
+1656012465695	Marionette	INFO	Stopped listening on port 53958
