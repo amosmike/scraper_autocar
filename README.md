@@ -1,9 +1,7 @@
 # scraper_autocar
 autocar scraper
 
-## M7 
-
-## T6
+## M7 T6
   docker build -t "imagename" --platform linux/x86_64 .
   
   docker run --platform linux/x86_64 "imagename"
