@@ -5,7 +5,9 @@ autocar scraper
   docker build -t "imagename" --platform linux/x86_64 .
   
   docker run --platform linux/x86_64 "imagename"
+  
   docker tag "Image_Id" "imagename"
+  
   docker push "imagename"
   
  ## M7 T5
