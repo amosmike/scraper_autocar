@@ -13,3 +13,8 @@ sudo docker run --rm -d -p 9090:9090 --name prometheus -v /Users/michaelamos/Dow
   static_configs:
   
     - targets: ["host.docker.internal:9090"]
+
+## T2 EC2 
+sudo docker run --rm -d -p network=host --name prometheus -v /Users/michaelamos/Downloads/prometheus-2.36.2.darwin-amd64/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus prom/prometheus --config.file=/etc/prometheus/prometheus.yml --web.enable-lifecycle
+
+- targets: ['localhost:9090']
