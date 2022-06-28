@@ -28,7 +28,7 @@ sudo docker run --rm -d -p 9090:9090 --name prometheus -v /Users/michaelamos/Dow
     - targets: ["host.docker.internal:9090"]
 
 ## T2 EC2 
-sudo docker run --rm -d -p network=host --name prometheus -v /home/ec2-user/prometheus.yml prom/prometheus --config.file=/etc/prometheus/prometheus.yml --web.enable-lifecycle
+sudo docker run --rm -d -p 9090:9090 --name prometheus -v /home/ec2-user/prometheus.yml prom/prometheus --config.file=/etc/prometheus/prometheus.yml --web.enable-lifecycle
 
   curl -X POST http://localhost:9090/-/reload
   
