@@ -43,3 +43,40 @@ sudo docker run --rm -d -p 9090:9090 --name prometheus -v /home/ec2-user/prometh
   "buildkit": true
   }
 }
+
+
+global:
+  scrape_interval: '15s'  # By default, scrape targets every 15 seconds.
+  scrape_timeout: '10s'
+  external_labels:
+    monitor: 'codelab-monitor'
+
+scrape_configs:
+
+  # Prometheus monitoring itself
+  - job_name: 'prometheus v2'
+    scrape_interval: '10s'
+    static_configs:
+      - targets: ['localhost:9090', '18.168.199.1:9090']
+
+  # OS monitoring
+  - job_name: 'node'
+    scrape_interval: '30s'
+    static_configs:
+      - targets: ['172.17.0.1:9100']
+
+  # Docker monitoring
+  - job_name: 'docker'
+         # metrics_path defaults to '/metrics'
+         # scheme defaults to 'http'.
+    static_configs:
+      - targets: ['172.17.0.1:9323'] # metrics address from our daemon.json file
+
+## T4
+
+https://grafana.com/docs/grafana/next/setup-grafana/installation/mac/
+
+## Milestone 8 TODO;
+
+Need node and engine_daemon queries,
+Docker not reading correct prometheus.yml
