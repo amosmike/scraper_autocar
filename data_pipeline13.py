@@ -16,6 +16,10 @@ import uuid
 import yaml
 import os 
 
+'''
+Deleted geckodriver 
+'''
+
 os.environ['GH_TOKEN']="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" # Expires Fri, Jul 1 2022.
 
 # Test
