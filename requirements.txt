@@ -5,3 +5,4 @@ pandas==1.4.2
 boto3==1.24.12
 PyYAML # Install yaml with PyYAML
 psycopg2==2.9.3  
+# Test

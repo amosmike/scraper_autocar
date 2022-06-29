@@ -16,7 +16,7 @@ import uuid
 import yaml
 import os 
 
-os.environ['GH_TOKEN']="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" # Expires Fri, Jul 1 2022.
+# os.environ['GH_TOKEN']= "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" # Expires Fri, Jul 1 2022. 
 
 # Test
 # sys.path.append(os.path.dirname(os.path.dirname(__file__)))
@@ -40,6 +40,8 @@ class Scraper:
         self.make = make
         self.model = model
         self.number_cars = number_cars
+
+        os.environ['GH_TOKEN']= self.git_token() # Expires Fri, Jul 1 2022. 
 
         ### DRIVER ###
         
@@ -83,7 +85,7 @@ class Scraper:
         self._find_dropdownbox_and_select('//*[@id="model"]', self.model) # Public 
         self._click_search() # Make private 
 
-    def gen_engine(self, creds = 'creds/RDS_creds_template.yaml'): 
+    def gen_engine(self, creds = 'creds/RDS_creds.yaml'): 
 
         with open(creds, 'r') as f:
             creds = yaml.safe_load(f)
@@ -100,6 +102,15 @@ class Scraper:
         engine.connect() 
 
         return engine
+
+    def git_token(self, token = 'geckodriver_token.yaml'): 
+
+        with open(token, 'r') as t:
+            token = yaml.safe_load(t)
+
+        TOKEN = token['TOKEN']
+
+        return TOKEN
 
     def truncate_tables(self, table_name):
         engine = self.gen_engine()
