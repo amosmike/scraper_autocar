@@ -1,6 +1,6 @@
 geckodriver
 geckodriver.log
-autocarkey.pem
-creds
+/creds/RDS_creds_template.yaml
 */downloads
 */car_pictures
+*.pem
