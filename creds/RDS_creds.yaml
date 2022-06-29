@@ -1,0 +1,7 @@
+DATABASE_TYPE: 'postgresql'
+DBAPI: 'psycopg2'
+ENDPOINT: 'aicoredb.cfomrz1jyxe6.eu-west-2.rds.amazonaws.com' 
+USER: 'postgres'
+PASSWORD: 'password'
+PORT: 5432
+DATABASE: 'postgres'
