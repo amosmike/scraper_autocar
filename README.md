@@ -43,7 +43,8 @@ sudo docker run --rm -d -p 9090:9090 --name prometheus -v /home/ec2-user/prometh
   "buildkit": true
   }
 }
-
+  
+## EDIT PROM FILE HERE: (sudo nano) /root/prometheus.yml
 
 global:
   scrape_interval: '15s'  # By default, scrape targets every 15 seconds.
