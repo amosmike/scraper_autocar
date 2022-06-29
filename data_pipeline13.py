@@ -16,7 +16,7 @@ import uuid
 import yaml
 import os 
 
-# os.environ['GH_TOKEN']= "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" # Expires Fri, Jul 1 2022. 
+os.environ['GH_TOKEN']= "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" # Expires Fri, Jul 1 2022. 
 
 # Test
 # sys.path.append(os.path.dirname(os.path.dirname(__file__)))
@@ -35,11 +35,11 @@ class Scraper:
     
     '''
 
-    def __init__(self, URL: str, postcode: str, make: str, model: str, number_cars: int): # initialize driver, url
-        self.postcode = postcode
-        self.make = make
-        self.model = model
-        self.number_cars = number_cars
+    def __init__(self, URL: str): # postcode: str, make: str, model: str, number_cars: int): # initialize driver, url
+        self.postcode = input('Postcode? \n')
+        self.make = input('Make of car to scrape? \n')
+        self.model = input('Model of car to scrape? \n')
+        self.number_cars = input('How many cars would you like to scrape? \n')
 
         os.environ['GH_TOKEN']= self.git_token() # Expires Fri, Jul 1 2022. 
 
@@ -522,7 +522,7 @@ if __name__ == "__main__":
 
     # Initiate class
 
-    autocar_scraper = Scraper("https://www.autotrader.co.uk", "CV326JA", "SEAT", "Ibiza", 5) # Public
+    autocar_scraper = Scraper("https://www.autotrader.co.uk") #, "CV326JA", "SEAT", "Ibiza", 5) # Public
     autocar_scraper.scrape()
 
 
