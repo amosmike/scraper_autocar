@@ -1,3 +1,4 @@
+from re import L
 from time import sleep
 from sqlalchemy import create_engine
 from selenium import webdriver
@@ -35,11 +36,12 @@ class Scraper:
     
     '''
 
-    def __init__(self, URL: str, postcode: str, make: str, model: str, number_cars: int): # initialize driver, url
-        self.postcode = postcode
-        self.make = make
-        self.model = model
-        self.number_cars = number_cars
+    def __init__(self, URL: str): # postcode: str, make: str, model: str, number_cars: int): # initialize driver, url
+        self.truncate_opt()
+        self.postcode = input('Postcode? \n')
+        self.make = input('Make of car to scrape? \n')
+        self.model = input('Model of car to scrape? \n')
+        self.number_cars = int(input('How many cars would you like to scrape? \n'))
 
         os.environ['GH_TOKEN']= self.git_token() # Expires Fri, Jul 1 2022. 
 
@@ -511,6 +513,18 @@ class Scraper:
         os.chdir(path) # Google os methods to see other capabilities 
         with open('data.json', 'w') as f: # 'w' is write mode, 'f' is file
             json.dump(self._makes_dict(self.number_cars), f)
+
+    def truncate_opt(self):
+        ans = input("Truncate previous data? (Y/N) \n")
+
+        if ans in ['Y', 'y']:
+            self.truncate_tables('car_dataset') # Truncate data?
+            print('truncated')
+        elif ans in ['N', 'n']:
+            pass
+        else: 
+            print('try again')
+            self.truncate_opt()
         
 
 if __name__ == "__main__":
@@ -522,14 +536,16 @@ if __name__ == "__main__":
 
     # Initiate class
 
-    autocar_scraper = Scraper("https://www.autotrader.co.uk", "CV326JA", "SEAT", "Ibiza", 5) # Public
+    autocar_scraper = Scraper("https://www.autotrader.co.uk") #, "CV326JA", "SEAT", "Ibiza", 5) # Public
+
+    # autocar_scraper.truncate_opt()
+
     autocar_scraper.scrape()
 
 
     ### Public functions ###
 
         # Uncomment to truncate dataset #
-    autocar_scraper.truncate_tables('car_dataset')
 
     ### Run scraper ###
 
