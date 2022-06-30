@@ -115,4 +115,4 @@ COPY . .
 
 RUN pip install -r requirements.txt
 
-CMD ["python", "data_pipeline13.py"]
+CMD ["python", "data_pipeline.py"]
