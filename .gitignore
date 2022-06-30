@@ -5,3 +5,4 @@ geckodriver_token.yaml
 **.pem
 **/creds/RDS_creds.yaml
 creds/RDS_creds
+RDS_creds
