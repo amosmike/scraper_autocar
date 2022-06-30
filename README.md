@@ -88,7 +88,7 @@ List the ready features here:
  
  ssh -i <key-pair-name>.pem ec2-user@<public-dns>
  
- ssh -i autocarkey.pem ec2-user@ec2-18-168-199-1.eu-west-2.compute.amazonaws.com
+ ssh -i autocarkey.pem ec2-user@ec2-3-9-23-37.eu-west-2.compute.amazonaws.com
   
  scp -i autocarkey.pem /Users/michaelamos/Documents/AICore/Autocar/autocar_scraper/data_pipeline13.py ec2-user@ec2-18-168-199-1.eu-west-2.compute.amazonaws.com:  
   
