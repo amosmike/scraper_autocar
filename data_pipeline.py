@@ -39,10 +39,10 @@ class Scraper:
 
     def __init__(self, URL: str): # postcode: str, make: str, model: str, number_cars: int): # initialize driver, url
         self.truncate_opt()
-        self.postcode = input('Postcode? \n')
-        self.make = input('Make of car to scrape? \n')
-        self.model = input('Model of car to scrape? \n')
-        self.number_cars = int(input('How many cars would you like to scrape? \n'))
+        self.postcode = "CH646SE" # input('Postcode? \n')
+        self.make = "SEAT" # input('Make of car to scrape? \n')
+        self.model = "Ibiza" # input('Model of car to scrape? \n')
+        self.number_cars = 3 # int(input('How many cars would you like to scrape? \n'))
 
         os.environ['GH_TOKEN']= self.git_token() # Expires Fri, Jul 1 2022. 
 
@@ -79,6 +79,10 @@ class Scraper:
 
         self.driver.get(URL)
         self.driver.maximize_window() # Maximize webpage
+
+        # get data
+        self.car_data = self._makes_dict(self, self.number_cars)
+
         sleep(2)
 
     def scrape(self):
