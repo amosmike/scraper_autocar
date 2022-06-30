@@ -19,39 +19,56 @@
 
 
 ## General Information
+- Project gathes car data for the intention of quickly getting a real world value of a car of a particular make, age, and milage.
+- I undertook this project as I'd like to sell my car and wanted to eaily find what the market price for cars with similar specs were. 
+
+<--!
 - Provide general information about your project here.
 - What problem does it (intend to) solve?
 - What is the purpose of your project?
 - Why did you undertake it?
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+You don't have to answer all the questions - just the ones relevant to your project. -->
 
 
 ## Technologies Used
-- Tech 1 - version 1.0
-- Tech 2 - version 2.0
-- Tech 3 - version 3.0
-
+- selenium==4.1.5
+- sqlalchemy==1.4.32
+- webdriver-manager==3.7.0
+- pandas==1.4.2
+- boto3==1.24.12
+- PyYAML # Installs yaml
+- psycopg2==2.9.3  
+- Docker 
+- Prometheus
+- Gafana
 
 ## Features
 List the ready features here:
-- Awesome feature 1
-- Awesome feature 2
+- Scraped will check data scraped isn't already stored in RDS
+- Option to truncate RDS
 
 ## Screenshots
 
 ## Setup
+> In order to use this directory you must add in a Git Token and the details for your RDS database, templates provided.
 
 ## Usage
+> To run the scraper, you can pull the docker image using: docker pull amosmichael/data_pipeline13 and run docker run docker run --platform linux/x86_64 amosmichael/data_pipeline13.
 
 ## Project-status
+> Finished, but continuously improving
 
 ## Room-for-improvement
 - Node prometheus not working
 - Make repeatable
 
 ## Acknowledgements
+- AICore instructors for their guidance
 
 ## Contact
+- See my github overview for contact details.
+
+<!--
 
 ## Lessons Learnt 
 
@@ -132,4 +149,4 @@ scrape_configs:
 
 https://grafana.com/docs/grafana/next/setup-grafana/installation/mac/
 
-
+-->
