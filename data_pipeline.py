@@ -80,9 +80,6 @@ class Scraper:
         self.driver.get(URL)
         self.driver.maximize_window() # Maximize webpage
 
-        # get data
-        self.car_data = self._makes_dict(self.number_cars)
-
         sleep(2)
 
     def scrape(self):
@@ -91,6 +88,8 @@ class Scraper:
         self._find_dropdownbox_and_select('//*[@id="make"]', self.make) # Public 
         self._find_dropdownbox_and_select('//*[@id="model"]', self.model) # Public 
         self._click_search() # Make private 
+        self.car_data = self._makes_dict(self.number_cars)
+
 
     def gen_engine(self, creds = 'RDS_creds.yaml'): 
 
@@ -515,7 +514,7 @@ class Scraper:
         '''
         Function runs scraper and saves dictionary locally as JSON
         '''
-        os.mkdir(r'raw_data')
+        # os.mkdir(r'raw_data')
         os.chdir(path) # Google os methods to see other capabilities 
         with open('data.json', 'w') as f: # 'w' is write mode, 'f' is file
             json.dump(self.car_data, f)
@@ -548,7 +547,7 @@ if __name__ == "__main__":
     'postgres', 'password', 5432, 'postgres')  # Saves car data to RDS # User could input their details
 
         # Write to json
-    autocar_scraper.save_as_JSON('/Users/michaelamos/Documents/AICore/Practice/autotrader/raw_data')
+    autocar_scraper.save_as_JSON('raw_data')
 
         # Save locally as JSON #
     # autocar_scraper.save_as_JSON('/Users/michaelamos/Documents/AICore/Practice/autotrader/raw_data') # Saves car data to JSON # User could input their details
