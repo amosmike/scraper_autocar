@@ -1,6 +1,6 @@
 # This is a basic workflow for creating & pushing a new Dockerimage with each push on main
 
-name: CI
+name: Docker upload
 
 # Controls when the workflow will run
 on:
