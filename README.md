@@ -85,10 +85,14 @@ List the ready features here:
   
  - M7 T5
  Connect to EC2
+ install docker - sudo yum install docker
+ sudo systemctl start docker
  
  ssh -i <key-pair-name>.pem ec2-user@<public-dns>
  
- ssh -i autocarkey.pem ec2-user@ec2-3-9-23-37.eu-west-2.compute.amazonaws.com
+ ssh -i autocarkey.pem ec2-user@ec2-3-8-204-83.eu-west-2.compute.amazonaws.com
+ 
+ sudo docker run -it --platform linux/x86_64 amosmichael/scraper_autocar
   
  scp -i autocarkey.pem /Users/michaelamos/Documents/AICore/Autocar/autocar_scraper/data_pipeline13.py ec2-user@ec2-18-168-199-1.eu-west-2.compute.amazonaws.com:  
   
