@@ -81,7 +81,7 @@ class Scraper:
         self.driver.maximize_window() # Maximize webpage
 
         # get data
-        self.car_data = self._makes_dict(self, self.number_cars)
+        self.car_data = self._makes_dict(self.number_cars)
 
         sleep(2)
 
@@ -92,7 +92,7 @@ class Scraper:
         self._find_dropdownbox_and_select('//*[@id="model"]', self.model) # Public 
         self._click_search() # Make private 
 
-    def gen_engine(self, creds = 'creds/RDS_creds.yaml'): 
+    def gen_engine(self, creds = 'RDS_creds.yaml'): 
 
         with open(creds, 'r') as f:
             creds = yaml.safe_load(f)
