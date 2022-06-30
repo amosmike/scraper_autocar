@@ -7,3 +7,10 @@ geckodriver_token.yaml
 **/creds/RDS_creds.yaml
 creds/RDS_creds
 RDS_creds
+raw_data
+/raw_data
+*/raw_data
+*/raw_data/*
+
+
+
