@@ -28,7 +28,6 @@
 - Why did you undertake it?
 You don't have to answer all the questions - just the ones relevant to your project.  -->
 
-
 ## Technologies Used
 - selenium==4.1.5
 - sqlalchemy==1.4.32
