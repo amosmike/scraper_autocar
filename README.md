@@ -22,12 +22,11 @@
 - Project gathes car data for the intention of quickly getting a real world value of a car of a particular make, age, and milage.
 - I undertook this project as I'd like to sell my car and wanted to eaily find what the market price for cars with similar specs were. 
 
-<--!
-- Provide general information about your project here.
+<!-- - Provide general information about your project here.
 - What problem does it (intend to) solve?
 - What is the purpose of your project?
 - Why did you undertake it?
-You don't have to answer all the questions - just the ones relevant to your project. -->
+You don't have to answer all the questions - just the ones relevant to your project.  -->
 
 
 ## Technologies Used
