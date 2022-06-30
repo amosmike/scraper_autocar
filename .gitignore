@@ -1,7 +1,7 @@
-**/RDS_creds.yaml
+# **/RDS_creds.yaml
 geckodriver_token.yaml
 .DS_Store
 **/.DS_Store
 **.pem
-**/creds/RDS_creds.yaml
-creds/RDS_creds
+# **/creds/RDS_creds.yaml
+# creds/RDS_creds
