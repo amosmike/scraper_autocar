@@ -432,7 +432,7 @@ class Scraper:
                 car_data['Miles'].append(miles)
                 
                 # Saves picture locally 
-                # os.chdir(r'/Users/michaelamos/Documents/AICore/Autocar/autocar_scraper/car_pictures') 
+                # os.mkdir(r'/Users/michaelamos/Documents/AICore/Autocar/autocar_scraper/car_pictures') 
                 # img = urllib.request.urlretrieve(picture, str(id)+ ".jpg")
                 # # img = urllib.request.urlretrieve(picture, str(id) + "_" + str(count) + ".jpg")
                 # os.chdir(r'/Users/michaelamos/Documents/AICore/Autocar/autocar_scraper')
@@ -502,7 +502,7 @@ class Scraper:
 
         engine = self.gen_engine()
         
-        df = pd.DataFrame(self._makes_dict(self.number_cars))
+        df = pd.DataFrame(self.car_data)
         df.head()
 
         df.to_sql('car_dataset', engine, if_exists='append') # append
@@ -515,9 +515,10 @@ class Scraper:
         '''
         Function runs scraper and saves dictionary locally as JSON
         '''
+        os.mkdir(r'raw_data')
         os.chdir(path) # Google os methods to see other capabilities 
         with open('data.json', 'w') as f: # 'w' is write mode, 'f' is file
-            json.dump(self._makes_dict(self.number_cars), f)
+            json.dump(self.car_data, f)
 
     def truncate_opt(self):
         ans = input("Truncate previous data? (Y/N) \n")
@@ -538,25 +539,16 @@ if __name__ == "__main__":
     # suite = unittest.TestLoader().loadTestsFromModule(test_product_2)
     # unittest.TextTestRunner(verbosity=2).run(suite)
 
-
-    # Initiate class
-
     autocar_scraper = Scraper("https://www.autotrader.co.uk") #, "CV326JA", "SEAT", "Ibiza", 5) # Public
-
-    # autocar_scraper.truncate_opt()
-
     autocar_scraper.scrape()
 
-
-    ### Public functions ###
-
-        # Uncomment to truncate dataset #
-
-    ### Run scraper ###
 
         # Upload to RDS #
     autocar_scraper.upload_to_RDS('postgresql', 'psycopg2', 'aicoredb.cfomrz1jyxe6.eu-west-2.rds.amazonaws.com', 
     'postgres', 'password', 5432, 'postgres')  # Saves car data to RDS # User could input their details
+
+        # Write to json
+    autocar_scraper.save_as_JSON('/Users/michaelamos/Documents/AICore/Practice/autotrader/raw_data')
 
         # Save locally as JSON #
     # autocar_scraper.save_as_JSON('/Users/michaelamos/Documents/AICore/Practice/autotrader/raw_data') # Saves car data to JSON # User could input their details
