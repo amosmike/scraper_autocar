@@ -72,12 +72,16 @@ List the ready features here:
 
  - M7 T4
   docker build -t "imagename" --platform linux/x86_64 .
+  docker build -t scraper_autocar --platform linux/x86_64 .  
   
   docker run --platform linux/x86_64 "imagename"
+  docker run -it --platform linux/x86_64 scraper_autocar
   
-  docker tag "Image_Id" "imagename"
+  docker tag "Image_Id"/"imagename"
+  docker tag scraper_autocar amosmichael/scraper_autocar
   
   docker push "imagename"
+  docker push amosmichael/scraper_autocar
   
  - M7 T5
  Connect to EC2
